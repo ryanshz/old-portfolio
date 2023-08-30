@@ -1,0 +1,27 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #212124;
+    color: #FFFFFF;
+}
+.heading{
+    text-align: center;
+}
+.nav{
+    text-align: center;
+    padding-top: 5px;
+}
+.about{
+    text-align: center;
+}
+a:link {
+    color: #FFFFFF;
+}  
+a:visited {
+    color: lightcoral;
+}
+a:hover {
+    color: #FFFFFF;
+}
+a:active {
+    color: lightcoral;
+}
