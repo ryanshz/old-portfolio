@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -7,7 +9,7 @@ body{
     justify-content: space-between;
 }
 header{
-    background-color: #18122B;
+    background-color: #1e2124;
 }
 .nav{
     padding: 5px;
@@ -26,7 +28,7 @@ header{
     font-weight: bold;
 }
 main{
-    background-color: #393053;
+    background-color: #36393e;
     flex: 1;
 }
 .heading, .about, .contract{
@@ -34,7 +36,7 @@ main{
     color: #fff;
 }
 footer{
-    background-color: #18122B;
+    background-color: #1e2124;
 }
 a:link {
     color: #fff;
@@ -43,15 +45,15 @@ a:visited {
     color: #fff;
 }
 a:hover {
-    color: #635985;
+    color: rgb(255, 130, 130);
 }
 a:active {
     color: #fff;
 }
 
 /* color palette
-#635985 light purple
-#443C68 med purple 1
-#393053 med purple 2
-#18122B dark purple
+#1e2124 header/footer
+#36393e main
+#424549 alt
+#fff text
 */
