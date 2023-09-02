@@ -66,8 +66,42 @@ main{
     background-color: #0d1117;
     flex: 1;
 }
+.index-main{
+    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../images/saber-bg.png");
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-box{
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    box-shadow: inset 0 -1px 0 #21262d;
+    box-shadow: 2px 2px 5px #010409;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side-main{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-side-main{
+    width: 500px;
+}
 .heading, .center, .end{
     text-align: center;
+    color: #c9d1d9;
+}
+.right{
+    text-align: right;
+    color: #c9d1d9;
+}
+.color{
     color: #c9d1d9;
 }
 .intro{
@@ -86,6 +120,14 @@ footer{
     margin: 10px auto;
     border-radius: 10px;
 }
+.index-image{
+    border: 1px solid #30363d;
+    border-radius: 50%;
+    max-width: 50%;
+}
+.status-color{
+    color: #f85249d3;
+}
 a:link {
     color: #c9d1d9;
 }  
@@ -102,6 +144,6 @@ a:active {
 /* color palette
 #010409 header/footer
 #0d1117 main
-#30363d #21262d alt
+#30363d #21262d #161b22 alt
 #c9d1d9 text
 */
