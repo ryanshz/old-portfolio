@@ -50,6 +50,9 @@ header{
     text-decoration: none;
     font-weight: 400;
 }
+.link{
+    text-decoration: none;
+}
 .main-divider{
     margin: 0;
     border: 0;
@@ -73,6 +76,11 @@ main{
     align-items: center;
     justify-content: center;
 }
+.project-main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .about-box{
     background-color: #161b22;
     border: 1px solid #30363d;
@@ -93,6 +101,51 @@ main{
 .right-side-main{
     width: 500px;
 }
+.project-image-box{
+    height: 75vh;
+    width: 75%;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    box-shadow: inset 0 -1px 0 #21262d;
+    box-shadow: 2px 2px 5px #010409;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.project-image-item{
+    background-color: #0104098d;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    box-shadow: inset 0 -1px 0 #21262d;
+    box-shadow: 2px 2px 5px #010409;
+    width: 49%;
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.proj-item1{
+    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../../projects/images/javacoffee-ss.png");
+    background-position: right;
+}
+.proj-item2{
+    background: linear-gradient(#0d1117ba, #010409cc), url("../../projects/images/bootstrapping-ss.png");
+    background-size: cover;
+    background-position: center;
+}
+.proj-item3{
+    background: linear-gradient(to right, #0d1117ba, #010409cc), url("../../projects/images/odinlanding-ss.png");
+    background-size: cover;
+    background-position: center;
+}
+.proj-item4{
+    background: linear-gradient(#0d1117ba, #010409cc), url("../../projects/images/itis-ss.png");
+    background-position: center;
+} 
 .heading, .center, .end{
     text-align: center;
     color: #c9d1d9;
@@ -122,6 +175,7 @@ footer{
 }
 .index-image{
     border: 1px solid #30363d;
+    box-shadow: inset 0 -1px 0 #21262d;
     border-radius: 50%;
     max-width: 50%;
 }
