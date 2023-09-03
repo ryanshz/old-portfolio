@@ -1,3 +1,3 @@
 # ryanshz.github.io
 
-General repository for ITIS 3135, my web and app development course.
+General repository for ryanshz.github.io, my portfolio and course website.
