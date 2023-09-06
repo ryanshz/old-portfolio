@@ -70,6 +70,7 @@ main{
     flex: 1;
 }
 .index-main{
+    max-width: 100%;
     background: linear-gradient(to top, #0d1117ba, #010409cc), url("../images/saber-bg.png");
     flex: 1;
     display: flex;
@@ -83,6 +84,7 @@ main{
     padding-bottom: 30px;
 }
 .about-box{
+    max-width: 100%;
     background-color: #161b22;
     border: 1px solid #30363d;
     border-radius: 10px;
@@ -94,12 +96,14 @@ main{
     align-items: center;
 }
 .left-side-main{
+    max-width: 100%;
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .right-side-main{
+    max-width: 100%;
     width: 500px;
 }
 .project-image-box{
