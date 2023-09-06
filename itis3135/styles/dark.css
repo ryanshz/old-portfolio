@@ -20,12 +20,12 @@ header{
 .nav-bottom{
     padding: 5px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 .navlist{
     padding: 0;
-    list-style-type:none;
+    list-style-type: none;
     display: flex;
     gap: 16px;
     align-items: center;
@@ -33,7 +33,7 @@ header{
 }
 .navlist-right{
     padding: 0 16px;
-    list-style-type:none;
+    list-style-type: none;
     display: flex;
     gap: 16px;
     justify-content: flex-end;
