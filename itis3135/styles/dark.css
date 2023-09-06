@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-header{
+header, footer{
     background-color: #010409;
 }
 .nav-top{
@@ -176,9 +176,6 @@ main{
     padding-top: 10px;
     max-width: 60%;
     color:#c9d1d9
-}
-footer{
-    background-color: #010409;
 }
 .introimage{
     max-width: 30%;
