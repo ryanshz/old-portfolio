@@ -53,6 +53,9 @@ header{
 .link{
     text-decoration: none;
 }
+.bullet-spacing{
+    margin: 20px 0px;
+}
 .main-divider{
     margin: 0;
     border: 0;
@@ -154,6 +157,12 @@ main{
 .heading, .center, .end{
     text-align: center;
     color: #c9d1d9;
+}
+.left{
+    margin-left: 200px;
+    margin-right: 100px;
+    color: #c9d1d9;
+    font-size: 18px;
 }
 .right{
     text-align: right;
