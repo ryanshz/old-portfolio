@@ -111,8 +111,8 @@ main{
     max-width: 100%;
     width: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 .right-side-main{
     max-width: 100%;
@@ -195,6 +195,47 @@ a:active {
     color: #c9d1d9;
 }
 
+/*media mobile*/
+
+@media only screen and (max-width: 600px){
+    .about-box{
+        padding: 8px;
+        margin: 10px;
+    }
+    .left-side-main, .right-side-main{
+        margin: 5px;
+        width: auto;
+    }
+    .navlist{
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-box{
+        padding: 16px;
+        margin: 10px;
+    }
+    .left-side-main, .right-side-main{
+        width: auto;
+    }
+    .navlist{
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 1068px){
+    .about-box{
+        padding: 16px;
+        margin: 10px;
+    }
+    .left-side-main, .right-side-main{
+        width: auto;
+    }
+    .navlist{
+        gap: 32px;
+    }
+}
 /* color palette
 #010409 header/footer
 #0d1117 main
