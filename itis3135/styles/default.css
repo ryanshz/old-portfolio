@@ -242,6 +242,12 @@ a:active {
         padding: 0 10px;
     }
 }
+
+@media only screen and (max-width: 1280px){
+    body{
+        width: 100%;
+    }
+}
 /* color palette
 #010409 header/footer
 #0d1117 main
