@@ -40,6 +40,13 @@ main{
     align-items: center;
     justify-content: center;
 }
+.table-list{
+    text-align: center;
+}
+.list-center{
+    display: inline-block;
+    text-align: left;
+}
 
 /*navigation bar*/
 .nav-top{
@@ -91,6 +98,15 @@ main{
     border-top: 1px solid #30363d;
 }
 
+/*table*/
+.table-align{
+    width: 80%;
+    border-spacing: 5px;
+    padding: 0px;
+}
+tr:hover{
+    background-color: #30363d;
+}
 /*other main pages*/
 
 /*index root pages*/
