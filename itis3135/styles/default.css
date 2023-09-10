@@ -104,8 +104,12 @@ main{
     border-spacing: 5px;
     padding: 0px;
 }
-tr:hover{
-    background-color: #30363d;
+table{
+    border: 1px solid #30363d;
+    padding: 0;
+}
+tr:nth-child(odd){
+    background-color: #010409;
 }
 /*other main pages*/
 
