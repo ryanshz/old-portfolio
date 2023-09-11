@@ -111,6 +111,12 @@ table{
 tr:nth-child(odd){
     background-color: #010409;
 }
+
+/*forms*/
+.submit{
+    margin: 1em auto;
+    width: 100px;
+}
 /*other main pages*/
 
 /*index root pages*/

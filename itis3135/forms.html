@@ -27,9 +27,49 @@
     </header>
     <hr class="main-divider">
     <main>
-        <h1 class="center color">ryan shultz's ravening serpent // itis3135</h1>
-        <h2 class="center color">forms</h2>
-        <p class="center color">content</p>
+        <div class="color center">
+            <h1>ryan shultz's ravening serpent // itis3135</h1>
+            <h2>forms</h2>
+            <h3>Shultzcorp Forms</h3>
+        </div>
+        <div class="text-format color">
+            <forms>
+                <fieldset>
+                    <legend>General Information: </legend>
+                    <label for="name">First Name: <input required type="text" id="name" name="name" placeholder="name" size="text"></label><br>
+                    <label for="number">Phone Number: <input required type="number" id="number" name="number" placeholder="123-456-7890"></label><br>
+                    <label for="email">Email Address: <input required type="email" id="email" name="email" placeholder="email@shultzcorp.com" size="email"></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Coding Language Proficiency:</legend>
+                    <label for="python"><input type="checkbox" id="python" name="codinglang" value="python"> Python</label><br>
+                    <label for="java"><input type="checkbox" id="java" name="codinglang" value="java"> Java</label><br>
+                    <label for="cpp"><input type="checkbox" id="cpp" name="codinglang" value="cpp"> C++</label><br>
+                    <label for="javascript"><input type="checkbox" id="javascript" name="codinglang" value="javascript"> Javascript</label><br>
+                    <label for="rust"><input type="checkbox" id="rust" name="codinglang" value="rust"> Rust</label><br>
+                    <label for="scala"><input type="checkbox" id="scala" name="codinglang" value="scala"> Scala</label><br>
+                    <label for="other"><input type="checkbox" id="other" name="codinglang" value="other"> Other</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <select id="hear" name="hear">
+                        <option value="select">Select Option</option>
+                        <option value="text">Text</option>
+                        <option value="email">Email</option>
+                        <option value="friend">Friend</option>
+                        <option value="online">Online</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you wish to opt into our newsletter?</legend>
+                    <label for="yes"><input checked type="radio" id="yes" name="newsletter" value="yes">Yes</label><br>
+                    <label for="no"><input type="radio" id="no" name="newsletter" value="no">No</label><br>
+                </fieldset>
+                <label for="submit"><input class="submit" type="submit" id="submit" name="submit" action="#"></label>
+                <label for="reset"><input class="submit" type="reset" id="reset" name="reset"></label>
+            </forms>
+        </div>
     </main>
     <hr class="main-divider">
     <footer>
