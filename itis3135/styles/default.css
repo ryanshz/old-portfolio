@@ -117,6 +117,12 @@ tr:nth-child(odd){
     margin: 1em auto;
     width: 100px;
 }
+.text-format-forms{
+    margin: 1em auto;
+    padding: 20px;
+    width: 60%;
+    font-size: 18px;
+}
 /*other main pages*/
 
 /*index root pages*/
