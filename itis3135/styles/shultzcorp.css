@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Alegreya Bold';
+    src: url(../shultzcorp.com/design-logo/fonts/Alegreya\ Bold.ttf);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header, footer{
+    background-color: #f0f0f0;
+}
+main{
+    background-color: #e9e9e9;
+    flex: 1;
+}
+
+/*typography and alignment*/
+.center{
+    text-align: center;
+}
+.fancy-font{
+    font-family: 'Alegreya Bold', 'Inter', sans-serif;
+}
+.color{
+    color: #1d1d1d;
+}
+.colortwo{
+    color: #ff4057;
+}
+.text-deco{
+    text-decoration: none;
+}
+.bullet-spacing{
+    margin: 20px auto;
+}
+.text-format{
+    margin: 1em auto;
+    max-width: 60%;
+    font-size: 18px;
+}
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lc-outer{
+    text-align: center;
+    margin-top: 0;
+}
+.list-center{
+    display: inline-block;
+    text-align: left;
+}
+
+/*dividers*/
+.main-divider{
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #DCDCDC;
+}
+
+/*navigation bar*/
+.nav-top{
+    justify-content: space-between;
+}
+.nav-bottom{
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navlist{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.navlist-left{
+    padding: 0;
+    justify-content: center;
+}
+.navlist-right{
+    padding: 0 16px;
+    justify-content: flex-end;
+}
+.name{
+    font-size: 23px;
+    font-weight: 900;
+    padding-left: 32px;
+    padding-right: 16px;
+}
+.navlink{
+    font-weight: 400;
+}
+
+/*page specific*/
+.logo{
+    padding-right: 10px;
+    width: 55px;
+    height: auto;
+}
+.header-image{
+    box-shadow: 2px 2px 5px #a0a0a0, -2px 2px 5px #a0a0a0;
+    max-width: 99%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*miscellaneous*/
+a:link {
+    color: #1d1d1d;
+}  
+a:visited {
+    color: #1d1d1d;
+}
+a:hover {
+    color: #ff4057;
+}
+a:active {
+    color: #1d1d1d;
+}
