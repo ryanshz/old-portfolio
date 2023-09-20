@@ -11,19 +11,7 @@
     <link rel="stylesheet" href="itis3135/styles/default.css">
 </head>
 <body>
-    <header>
-        <nav class="nav nav-top" id="nav">
-            <ul class="navlist navlist-left">
-                <li><a class="name text-deco" href="index.html">ryanshz</a></li>
-            </ul>
-            <ul class="navlist navlist-right">
-                <li><a class="navlink text-deco" href="https://github.com/ryanshz" target="_blank">github</a></li>
-                <li><a class="navlink text-deco" href="projects/index.html">projects</a></li>
-                <li><a class="navlink text-deco" href="itis3135/index.html">itis3135</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr class="main-divider">
+    <div data-include="components/header.html"></div>
     <main class="index-root d-flex-center">
         <div class="about-box d-flex-center">
             <div class="left-side-main">
@@ -46,17 +34,7 @@
             </div>
         </div>
     </main>
-    <hr class="main-divider">
-    <footer>
-        <nav class="nav nav-bottom">
-            <ul class="navlist">
-                <li><a class="navlink text-deco" href="https://webpages.charlotte.edu/cshultz/" target="_blank">clt webspace</a></li>
-                <li><a class="navlink text-deco" href="https://www.freecodecamp.org/ryanshz" target="_blank">freecodecamp</a></li>
-                <li><a class="navlink text-deco" href="https://www.codecademy.com/profiles/ryanshz" target="_blank">codecademy</a></li>
-                <li><a class="navlink text-deco" href="https://www.linkedin.com/in/ryanshz/" target="_blank">linkedin</a></li>
-            </ul>
-        </nav>
-        
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src="javascript/HTMLInclude.min.js"></script>
 </body>
 </html>
