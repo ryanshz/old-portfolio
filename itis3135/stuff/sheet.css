@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Delius&display=swap');
+@font-face {
+    font-family: 'Papyrus';
+    src: url(asdf/papyrus.ttf);
+}
+
+a{
+    width: 1000px;
+    height: 200px;
+}
+p{
+    font-family: 'Comic Neue';
+}
+hr{
+    border-bottom: 30px solid blue;
+    border-top: 100px solid red;
+    border-left: 10px solid purple;
+    border-right: 20px solid green;
+}
+h1{
+    margin-left: 73px;
+}
+h1,h2{
+    font-family: 'Papyrus';
+}
