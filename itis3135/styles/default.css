@@ -201,21 +201,21 @@ forms{
     padding: 0;
 }
 .proj-item1{
-    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../../projects/images/javacoffee-ss.png");
+    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../../images/p-javacoffee-ss.png");
     background-position: right;
 }
 .proj-item2{
-    background: linear-gradient(#0d1117ba, #010409cc), url("../../projects/images/bootstrapping-ss.png");
+    background: linear-gradient(#0d1117ba, #010409cc), url("../../images/p-bootstrapping-ss.png");
     background-size: cover;
     background-position: center;
 }
 .proj-item3{
-    background: linear-gradient(to right, #0d1117ba, #010409cc), url("../../projects/images/odinlanding-ss.png");
+    background: linear-gradient(to right, #0d1117ba, #010409cc), url("../../images/p-odinlanding-ss.png");
     background-size: cover;
     background-position: center;
 }
 .proj-item4{
-    background: linear-gradient(#0d1117ba, #010409cc), url("../../projects/images/itis-ss.png");
+    background: linear-gradient(#0d1117ba, #010409cc), url("../../images/p-itis-ss.png");
     background-position: center;
 }
 
