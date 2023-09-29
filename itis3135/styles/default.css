@@ -66,6 +66,7 @@ main{
     display: flex;
     align-items: center;
     gap: 16px;
+    overflow: hidden;
 }
 .navlist-left{
     padding: 0;
@@ -83,6 +84,10 @@ main{
 .navlink{
     font-weight: 400;
 }
+.nav .icon{
+    display:none;
+}
+
 
 /*dividers*/
 .main-divider{
@@ -144,7 +149,7 @@ form{
 /*index root pages*/
 .index-root{
     max-width: 100%;
-    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../images/saber-bg.png");
+    background: linear-gradient(to top, #0d1117ba, #010409cc), url("../../images/saber-bg.png");
     flex: 1;
 }
 .about-box{
@@ -269,6 +274,21 @@ a:active {
         margin: 5px;
         width: auto;
     }
+    .navlist-right li{ /*hides all links but first*/
+        display: none;
+    }
+    .navlist-right a.icon{ /*show icon*/
+        float: right;
+        display: block;
+    }
+    .navlist-right.responsive{
+        position: relative;
+    }
+    .navlist-right.responsive li{
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -282,6 +302,21 @@ a:active {
     .navlist{
         gap: 32px;
         flex-direction: column;
+    }
+    .navlist-right li{ /*hides all links but first*/
+        display: none;
+    }
+    .navlist-right a.icon{ /*show icon*/
+        float: right;
+        display: block;
+    }
+    .navlist-right.responsive{
+        position: relative;
+    }
+    .navlist-right.responsive li{
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
