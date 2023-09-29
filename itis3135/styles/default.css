@@ -113,7 +113,7 @@ tr:nth-child(odd){
 }
 
 /*forms*/
-forms{
+form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,8 +221,7 @@ forms{
 
 /*images*/
 #intro-image{
-    max-width: 30%;
-    max-height: 50%;
+    max-width: 80%;
     display: block;
     margin: 10px auto;
     border-radius: 10px;
@@ -233,8 +232,16 @@ forms{
     border-radius: 50%;
     max-width: 50%;
 }
+#header-logo{
+    width: 50px;
+    padding-right: 8px;
+}
 
 /*miscellaneous*/
+
+.name:hover{
+    color: #c9d1d9;
+}
 .status-color{
     color: #f85249d3;
 }
