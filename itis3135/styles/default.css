@@ -40,9 +40,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-.table-list{
-    text-align: center;
-}
 .list-center{
     display: inline-block;
     text-align: left;
@@ -88,19 +85,12 @@ main{
     display:none;
 }
 
-
 /*dividers*/
-.main-divider{
+hr{
     margin: 0;
     border: 0;
     border-top: 1px solid #30363d;
     box-shadow: inset 0 -1px 0 #21262d;
-}
-.footer-split{
-    max-width: 650px;
-    margin: auto;
-    border: 0;
-    border-top: 1px solid #30363d;
 }
 
 /*table*/
