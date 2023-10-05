@@ -9,7 +9,6 @@
     <title>ryan shultz's ravening serpent // itis3135 // firstscripts</title>
 </head>
 <body>
-    <script src="scripts/scriptAssignment.js"></script>
     <div data-include="components/header.html"></div>
     <hr class="main-divider">
     <main>
@@ -17,12 +16,31 @@
             <h1>ryan shultz's ravening serpent // itis3135</h1>
             <h2>first scripts</h2>
             <br>
-            <button style="padding:10px 20px;" onclick="date();">test JS</button>
-            <h3 id="date-time"></h3>
+            <button class="submit color" style="padding:10px 20px;" onclick="jsDate();">Display Date/Time</button>
+            <h3 id="date-time">click button for time</h3>
         </div>
+        <form class="color d-flex-center">
+            <fieldset class="text-format-forms">
+                <legend>greeting</legend>
+                <label for="name">Name: <input type="text" id="name"></label>
+                <label for="feel">How are you? <input type="text" id="feel"></label>
+                <label for="button"><button class="submit color" type="submit" name="submit" onclick="greeting();">Submit</label> 
+            </fieldset>
+        </form>
+        <p id="greeting-return" class="center color">Test</p>
+        <br>
+        <form class="color d-flex-center">
+            <fieldset class="text-format-forms">
+                <legend>shape</legend>
+                <label for="number">Input a number:<input type="number" id="number"></label>
+                <label for="button"><button class="submit color" type="submit" name="submit" onclick="number();">Submit</label> 
+            </fieldset>
+        </form>
+        <p id="shape-return" class="center color">Test</p>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/responsiveNavTop.js"></script>
+    <script src="scripts/scriptAssignment.js"></script>
 </body>
 </html>
