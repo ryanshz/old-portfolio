@@ -11,32 +11,75 @@
 <body>
     <div data-include="components/header.html"></div>
     <hr class="main-divider">
-    <main>
+    <main id="main">
         <div class="center color">
             <h1>ryan shultz's ravening serpent // itis3135</h1>
             <h2>first scripts</h2>
             <br>
-            <button class="submit color" style="padding:10px 20px;" onclick="jsDate();">Display Date/Time</button>
+            <button class="submit color" type="button" onclick="jsDate();">Get Date</button>
             <h3 id="date-time">click button for time</h3>
         </div>
         <form class="color d-flex-center">
-            <fieldset class="text-format-forms">
+            <fieldset>
                 <legend>greeting</legend>
                 <label for="name">Name: <input type="text" id="name"></label>
                 <label for="feel">How are you? <input type="text" id="feel"></label>
-                <label for="button"><button class="submit color" type="submit" name="submit" onclick="greeting();">Submit</label> 
+                <label for="button"><input class="submit color" type="button" value="Submit" onClick="greeting();"></label> 
             </fieldset>
         </form>
-        <p id="greeting-return" class="center color">Test</p>
+        <br>
+        <p id="greeting-return" class="center color"></p>
         <br>
         <form class="color d-flex-center">
-            <fieldset class="text-format-forms">
+            <fieldset>
                 <legend>shape</legend>
-                <label for="number">Input a number:<input type="number" id="number"></label>
-                <label for="button"><button class="submit color" type="submit" name="submit" onclick="number();">Submit</label> 
+                <label for="number">Input a number between 1 and 10: <input type="number" id="numberIn"></label>
+                <input class="submit color" type="button" value="Submit" onClick="shape();">
             </fieldset>
         </form>
-        <p id="shape-return" class="center color">Test</p>
+        <br>
+        <p id="shape-return" class="center color"></p>
+        <br>
+        <form class="color d-flex-center">
+            <fieldset>
+                <legend>snake</legend>
+                <input class="submit color" type="button" value="Snake" onClick="snake();">
+            </fieldset>
+        </form>
+        <br>
+        <p id="snake-return" class="center color"></p>
+        <br>
+        <form class="color d-flex-center">
+            <fieldset>
+                <legend>taxes</legend>
+                <p>Calculate silver serpent tax here!</p>
+                <label for="number">Annual income: <input type="number" id="taxValue"></label>
+                <input class="submit color" type="button" value="Submit" onClick="taxes();">
+            </fieldset>
+        </form>
+        <br>
+        <p id="taxes-return" class="center color"></p>
+        <p id="taxes-return-2" class="center color"></p>
+        <p id="taxes-return-3" class="center color" onClick="lol()"></p>
+        <p id="taxes-return-4" class="center color"></p>
+        <br>
+        <form class="color d-flex-center center">
+            <fieldset>
+                <legend>vacation</legend>
+                <p>i heard you like taking nice vacations instead of doing work.</p>
+                <input class="color vacation" type="button" value="Go on Vacation" onClick="onthebeachsippingapinkdrink();">
+            </fieldset>
+        </form>
+        <br>
+        <div id="beach"></div>
+        <br>
+        <form class="color d-flex-center">
+            <fieldset>
+                <legend>ravening</legend>
+                <input class="submit color" type="button" value="Ravening" onClick="ravening();">
+            </fieldset>
+        </form>
+        <br>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
