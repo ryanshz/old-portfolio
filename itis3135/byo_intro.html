@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../logo/favicon.png">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ryan shultz's ravening serpent // itis3135 // byo intro</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h1 class="center color">ryan shultz's ravening serpent // itis3135</h1>
+        <h2 class="center color">intro builder</h3>
+        <h3 class="center color">please fill out the form below to build your own intro page.</h3>
+        <form id="byo-form" class="color text-format-forms">
+            <fieldset class="center" style="width:50%;">
+                <label for="reset"><input class="submit color" type="reset" value="Reset" action="reset();"></label>
+                <label class="byo-fix bullet-spacing" for="firstname">First Name: <input type="text"
+                        name="firstname" id="fname" required></label>
+                <label class="byo-fix bullet-spacing" for="lastname">Last Name: <input type="text" name="lastname"
+                        id="lname" required></label>
+                <label class="byo-fix bullet-spacing" for="mascot">Mascot: <input type="text" name="mascot"
+                        id="mascot" required></label>
+                <label class="byo-fix bullet-spacing" for="image">Image: <input type="custom" name="image" required></label>
+                <label class="byo-fix bullet-spacing" for="imgcaption">Image Caption: <input type="text"
+                        name="imgcap" id="imgcap" required></label>
+                <label class="byo-fix bullet-spacing" for="personalbg">Personal Background: <textarea type="text"
+                        rows="3" cols="35" name="personalbg" id="personalbg" required></textarea></label>
+                <label class="byo-fix bullet-spacing" for="probg" >Professional Background: <textarea type="text"
+                        rows="3" cols="35" name="probg" id="probg" required></textarea></label>
+                <label class="byo-fix bullet-spacing" for="schoolbg">Academic Background: <textarea type="text"
+                        rows="3" cols="35" name="schoolbg" id="schoolbg" required></textarea></label>
+                <label class="byo-fix bullet-spacing" for="webbg">Web Development Background: <textarea type="text"
+                        rows="3" cols="35" name="webbg" id="webbg" required></textarea></label>
+                <label class="byo-fix bullet-spacing" for="os">Primary Computer Platform: <input type="text"
+                        name="os" id="os" required></label>
+                <label class="byo-fix bullet-spacing" for="courses">Courses Currently Taking and Why: <input
+                        type="custom" name="courses"></label>
+                <label class="byo-fix bullet-spacing" for="funny">Funny Things: <input type="text" name="funny"
+                        id="funny"></label>
+                <label class="byo-fix bullet-spacing" for="anything">Anything Else You'd Like to Mention: <input
+                        type="text" name="anything" id="anything"></label>
+                <label class="byo-fix bullet-spacing" style="gap:20px;text-align:left;" for="agreement"><input
+                        type="checkbox" name="agreement" id="agreement" required> I understand that what
+                    is on this page is not password protected and I will not put
+                    anything here that I don't want publicly available.</label>
+                <label for="submit"><input class="submit color" type="submit" value="Submit" action="genIntro();"></label>
+            </fieldset>
+        </form>
+        <div id="form-insertion-point"></div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/responsiveNavTop.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
