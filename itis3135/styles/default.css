@@ -253,6 +253,9 @@ form{
     margin: 0 auto;
     border-radius: 10px;
 }
+#kay-wireframe{
+    max-width: 100%;
+}
 
 /*miscellaneous*/
 
