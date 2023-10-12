@@ -24,6 +24,9 @@ main{
 .right{
     text-align: right;
 }
+.left{
+    text-align: left;
+}
 .color{
     color: #c9d1d9;
 }
@@ -46,6 +49,9 @@ main{
 .list-center{
     display: inline-block;
     text-align: left;
+}
+.hidden{
+    display: none;
 }
 
 /*navigation bar*/
@@ -147,8 +153,9 @@ form{
     border: 1px solid #30363d;
 }
 .byo-fix{
-    display:flex;
-    justify-content:space-between;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 /*other main pages*/
 
