@@ -157,6 +157,24 @@ form{
     display: flex;
     justify-content: space-between;
 }
+
+/*calculator*/
+.calculator-box{
+    border: 1px solid #30363d;
+    background-color: #c9d1d9;
+    margin: 1em auto;
+    padding: 8px 16px;
+    width: 440px;
+    height: 20px;
+}
+.operations{
+    border: 1px solid #30363d;
+    text-decoration: none;
+    background-color: #1d0703;
+    margin: 10px;
+    padding: 8px 16px;
+    width: 100px;
+}
 /*other main pages*/
 
 /*index root pages*/
