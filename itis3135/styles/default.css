@@ -159,7 +159,7 @@ form{
 }
 
 /*calculator*/
-.calculator-box{
+#calculator-box{
     border: 1px solid #30363d;
     background-color: #c9d1d9;
     margin: 1em auto;
