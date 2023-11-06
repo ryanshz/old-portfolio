@@ -74,13 +74,13 @@ li>a{
 }
 
 /*hero main alt*/
-#hero-main,#hero-alt{
+#hero{
     display: flex;
     gap: 2rem;
     margin: 3rem;
 }
 
-#hero-main>div,#hero-alt>div{
+#hero>div{
     background-color: var(--main);
     padding: 4px 1rem;
     width: fit-content;
@@ -89,21 +89,30 @@ li>a{
     box-shadow: 2px 2px black;
 }
 
-#hero-main>img,#hero-alt>img{
+#hero>img{
     width: 50%;
     border-radius: 1rem;
     border: 1px solid black;
     box-shadow: 2px 2px black;
 }
 
-#hero-main>div>h2,#hero-alt>div>h2{
+#hero>div>h2{
     font-family: 'Caveat', cursive;
     padding-bottom: 2rem;
     margin-top: 1rem;
     font-size: 24px;
 }
 
-#hero-main>div>p,#hero-alt>div>p{
+#heron>div>p{
     padding-bottom: 1rem;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    #hero{
+        flex-direction: column;
+    }
+    #hero>img{
+        width: 100%;
+    }
 }
