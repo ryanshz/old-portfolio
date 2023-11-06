@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main: #FFAFCC;
+    --alt1: #FFC8DD;
+    --alt2: #CDB4DB;
+    --alt3: #BDE0FE;
+    --link: #A2D2FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(-45deg, var(--alt1), var(--alt2));
+    font-family: 'Inter', sans-serif;
+}
+
+/*header footer*/
+header{
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4px 1rem;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-family: 'Caveat', cursive;
+}
+
+header>nav>ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav>ul>li{
+    list-style-type: none;
+}
+
+footer{
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4px 1rem;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-family: 'Caveat', cursive;
+}
+
+footer>nav>ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav>ul>li{
+    list-style-type: none;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+}
+
+/*hero main alt*/
+#hero-main,#hero-alt{
+    display: flex;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+#hero-main>div,#hero-alt>div{
+    background-color: var(--main);
+    padding: 4px 1rem;
+    width: fit-content;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
+
+#hero-main>img,#hero-alt>img{
+    width: 50%;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
+
+#hero-main>div>h2,#hero-alt>div>h2{
+    font-family: 'Caveat', cursive;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+#hero-main>div>p,#hero-alt>div>p{
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
