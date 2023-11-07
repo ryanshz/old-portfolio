@@ -18,6 +18,7 @@ body{
     background-color: var(--alt1);
     background: linear-gradient(-45deg, var(--alt1), var(--alt2));
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
 }
 
 /*header footer*/
@@ -46,42 +47,52 @@ nav>ul>li{
 }
 
 footer{
-    background-color: var(--main);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    margin: 1rem 3rem;
+    gap: 1rem;
+}
+
+footer>nav{
+    background-color: var(--main);
     padding: 4px 1rem;
     width: fit-content;
-    margin: 1rem auto;
     border-radius: 1rem;
     border: 1px solid black;
     box-shadow: 2px 2px black;
     font-family: 'Caveat', cursive;
-}
-
-footer>nav>ul{
     display: flex;
-    gap: 1rem;
 }
 
-nav>ul>li{
-    list-style-type: none;
+li>a,footer>nav>a{
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: black;
 }
 
-li>a{
+h1>a{
     text-decoration: none;
     color: black;
 }
 
 /*hero main alt*/
-#hero{
+.hero{
     display: flex;
     gap: 2rem;
     margin: 3rem;
 }
 
-#hero>div{
+#gallery{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about>img{
+    max-width: none;
+}
+
+.hero>div{
     background-color: var(--main);
     padding: 1rem;
     width: fit-content;
@@ -90,47 +101,45 @@ li>a{
     box-shadow: 2px 2px black;
 }
 
-#hero>img{
-    width: 40vw;
+.hero>img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 1rem;
     border: 1px solid black;
     box-shadow: 2px 2px black;
 }
 
-#hero>div>h2{
+.hero>div>h2{
     font-family: 'Caveat', cursive;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     font-size: 1.5rem;
 }
 
-#hero>div>p{
-    padding-bottom: 1rem;
+.hero>div>p{
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px){
-    #hero{
-        flex-direction: column;
-    }
-    #hero>img{
-        width: 100%;
+.hero>div>p:first-of-type{
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 414px){
+    header>h1{
+        font-size: 1.2rem;
     }
 }
 
 @media only screen and (max-width: 768px){
-    #hero{
+    .hero{
         flex-direction: column;
-    }
-    #hero>img{
-        width: 100%;
+        margin: 2rem;
     }
 }
 
 @media only screen and (max-width: 1068px){
-    #hero{
-        flex-direction: column;
-    }
-    #hero>img{
+    .hero>img{
         width: 100%;
+        margin: auto;
     }
 }
