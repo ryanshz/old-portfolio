@@ -82,7 +82,7 @@ li>a{
 
 #hero>div{
     background-color: var(--main);
-    padding: 4px 1rem;
+    padding: 1rem;
     width: fit-content;
     border-radius: 1rem;
     border: 1px solid black;
@@ -90,7 +90,7 @@ li>a{
 }
 
 #hero>img{
-    width: 50%;
+    width: 40vw;
     border-radius: 1rem;
     border: 1px solid black;
     box-shadow: 2px 2px black;
@@ -99,16 +99,33 @@ li>a{
 #hero>div>h2{
     font-family: 'Caveat', cursive;
     padding-bottom: 2rem;
-    margin-top: 1rem;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-#heron>div>p{
+#hero>div>p{
     padding-bottom: 1rem;
-    font-size: 20px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+    #hero{
+        flex-direction: column;
+    }
+    #hero>img{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px){
+    #hero{
+        flex-direction: column;
+    }
+    #hero>img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1068px){
     #hero{
         flex-direction: column;
     }
