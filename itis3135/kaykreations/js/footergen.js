@@ -8,7 +8,7 @@ const a3 = document.createElement('a');
 
 a1.setAttribute('href','index.html');
 a1.innerHTML = 'Home';
-a2.setAttribute('href','#');
+a2.setAttribute('href','https://www.instagram.com/kayceemarie444/?igshid=d2tmeHlodjhIYXpm');
 a2.setAttribute('target','_blank');
 a2.innerHTML = 'Instagram';
 a3.setAttribute('href','../shultzcorp.com');

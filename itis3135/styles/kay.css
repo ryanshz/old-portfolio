@@ -4,8 +4,8 @@
     --main: #FFAFCC;
     --alt1: #FFC8DD;
     --alt2: #CDB4DB;
-    --alt3: #BDE0FE;
-    --link: #A2D2FF;
+    --alt3: #9883a5;
+    --link: #cb7ff7;
 }
 
 *{
@@ -83,18 +83,38 @@ h1>a{
     margin: 3rem;
 }
 
+.title{
+    text-align: center; 
+    margin: auto; 
+    padding: 4px 1rem;
+}
+
 #gallery{
     flex-wrap: wrap;
     justify-content: center;
 }
 
 #about>img{
-    max-width: none;
+    max-width: 400px;
+}
+
+.hero>div>figure{
+    margin: 1rem;
+    font-size: 1.75rem;
+}
+
+.hero>div>figure>blockquote{
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.hero>div>figure>figcaption{
+    font-style: italic;
 }
 
 .hero>div{
     background-color: var(--main);
-    padding: 1rem;
+    padding: 1.5rem;
     width: fit-content;
     border-radius: 1rem;
     border: 1px solid black;
@@ -102,7 +122,7 @@ h1>a{
 }
 
 .hero>img{
-    max-width: 300px;
+    max-width: 450px;
     width: 100%;
     height: auto;
     border-radius: 1rem;
@@ -113,15 +133,20 @@ h1>a{
 .hero>div>h2{
     font-family: 'Caveat', cursive;
     padding-bottom: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hero>div>p{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
-.hero>div>p:first-of-type{
-    padding-bottom: 1rem;
+.hero>div>p:last-of-type{
+    padding-bottom: 0;
+}
+
+.hero>div>p>a{
+    color: var(--link);
 }
 
 @media only screen and (max-width: 414px){
