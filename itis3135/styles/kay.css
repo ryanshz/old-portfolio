@@ -20,6 +20,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+header,footer,section{
+    overflow: hidden;
+}
+
 /*header footer*/
 header{
     background-color: var(--main);
