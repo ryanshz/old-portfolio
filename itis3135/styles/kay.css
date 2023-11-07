@@ -12,14 +12,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body{
     background-color: var(--alt1);
     background: linear-gradient(-45deg, var(--alt1), var(--alt2));
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
 }
 
 /*header footer*/
