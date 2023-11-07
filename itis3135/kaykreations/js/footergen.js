@@ -6,12 +6,13 @@ const a1 = document.createElement('a');
 const a2 = document.createElement('a');
 const a3 = document.createElement('a');
 
-a1.setAttribute('href','#');
+a1.setAttribute('href','index.html');
 a1.innerHTML = 'Home';
 a2.setAttribute('href','#');
-a2.innerHTML = 'Socials';
+a2.setAttribute('target','_blank');
+a2.innerHTML = 'Instagram';
 a3.setAttribute('href','../shultzcorp.com');
-a3.setAttribute('target','_blank')
+a3.setAttribute('target','_blank');
 a3.innerHTML = '&copy;shultzcorp';
 
 nav1.appendChild(a1);
