@@ -79,13 +79,15 @@
             justify-content: center;
         }
 
-        header>nav {
+        header>nav{
             display: flex;
+            align-items: center;
             gap: 1rem;
         }
 
         header>h1>button,
         header>nav>button,
+        header>nav>h1>button,
         footer>nav>a {
             color: var(--head);
             text-decoration: none;
@@ -99,7 +101,7 @@
             font-size: 1rem;
         }
 
-        header>h1>button {
+        header>nav>h1>button {
             font-size: 2.215rem;
         }
 
@@ -258,7 +260,10 @@
 
 <body>
     <header>
-        <h1><button onclick="homeNav();">Bodybuilding</button></h1>
+        <nav>
+            <img src="favicon/android-chrome-192x192.png" style="width: 64px;">
+            <h1><button onclick="homeNav();">Bodybuilding</button></h1>
+        </nav>
         <nav id="navIndex" class="">
             <a href="javascript:void(0);" class="icon" onclick="displayNav()">
                 <i class="fa fa-bars"></i>
