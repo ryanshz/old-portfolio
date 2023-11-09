@@ -207,7 +207,31 @@
             display: none;
         }
 
+        .hundred50{   
+            width: 150%;
+        }
+
+        .twohundred{
+            width: 200%;
+        }
+
         @media screen and (max-width: 768px) {
+            header>nav>h1>button{
+                font-size:1.5rem;
+            }
+
+            ul{
+                padding-left: 2rem;
+            }
+
+            .hundred50,.twohundred{
+                width: 100%;
+            }
+
+            #titleicon{
+                display:none;
+            }
+
             .hero {
                 flex-direction: column;
                 margin: 1rem;
@@ -261,7 +285,7 @@
 <body>
     <header>
         <nav>
-            <img src="favicon/android-chrome-192x192.png" alt="site icon" style="width: 64px;">
+            <img id="titleicon" src="favicon/android-chrome-192x192.png" alt="site icon" style="width: 64px;">
             <h1><button onclick="homeNav();">Bodybuilding</button></h1>
         </nav>
         <nav id="navIndex" class="">
@@ -343,7 +367,7 @@
                 </div>
             </div>
             <div class="hero">
-                <figure style="width: 150%;">
+                <figure class="hundred50">
                     <img src="images/sandow.jpg" alt="Eugen Sandow">
                     <figcaption>Eugen Sandow</figcaption>
                 </figure>
@@ -396,13 +420,13 @@
                         nihil
                         molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                 </div>
-                <figure style="width: 150%;">
+                <figure class="hundred50">
                     <img src="images/arnoldmagazine.png" alt="Arnold Schwarzenegger">
                     <figcaption>Arnold Schwarzenegger</figcaption>
                 </figure>
             </div>
             <div class="hero">
-                <figure style="width: 200%;">
+                <figure class="twohundred">
                     <img src="images/ronniecoleman.png" alt="Ronnie Coleman">
                     <figcaption>Ronnie Coleman</figcaption>
                 </figure>
