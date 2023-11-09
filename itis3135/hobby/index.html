@@ -35,11 +35,11 @@
             font-family: 'Inter', sans-serif;
         }
 
-        header{
+        header {
             box-shadow: 2px 0px 5px black;
         }
 
-        footer{
+        footer {
             box-shadow: -2px 0px 5px black;
         }
 
@@ -70,9 +70,13 @@
             color: var(--font);
         }
 
-        .heroflex{
-            display: flex; 
+        .heroflex {
+            display: flex;
             flex-direction: column;
+        }
+
+        .horizontal-img-align {
+            justify-content: center;
         }
 
         header>nav {
@@ -106,11 +110,12 @@
         .hero {
             display: flex;
             gap: 2rem;
-            margin: 1rem;
-            padding: 1rem;
+            margin: 1rem 0;
+            padding: 1rem 2rem;
             background-color: var(--alt);
             border: 1px solid var(--border);
             box-shadow: 2px 2px 5px black;
+            border-radius: 1rem;
         }
 
         p {
@@ -120,16 +125,16 @@
             padding-bottom: 1rem;
         }
 
-        ul{
+        p:last-of-type {
+            padding-bottom: 0;
+        }
+
+        ul {
             padding-left: 3rem;
             list-style-type: circle;
             width: fit-content;
             color: var(--font);
             font-size: 1.5rem;
-        }
-
-        p:last-of-type {
-            padding-bottom: 0;
         }
 
         h2 {
@@ -144,7 +149,14 @@
             font-style: italic;
         }
 
-        section{
+        blockquote {
+            color: var(--fontalt);
+            font-style: italic;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        section {
             flex-direction: column;
         }
 
@@ -155,7 +167,7 @@
             box-shadow: 2px 2px 10px black;
         }
 
-        a{
+        a {
             color: var(--link);
         }
 
@@ -173,10 +185,10 @@
 
         #schedule {
             display: none;
-            
+
         }
 
-        #schedule>.hero{
+        #schedule>.hero {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -261,56 +273,61 @@
     </header>
     <main>
         <section id="home">
-            <h2>home</h2>
             <div class="hero">
                 <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
+                    <img src="images/arnold.jpg" alt="Arnold Schwarzenegger flexing his bicep.">
+                    <figcaption>Arnold Schwarzenegger flexing his bicep.</figcaption>
                 </figure>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <div class="heroflex">
+                    <h2>Bodybuilding: Hobby Site Midterm</h2>
+                    <p>This site was created as an assignment for one of my class midterms, but also made due to my love
+                        for bodybuilding as a sport. I initially wasn't too fond of bodybuilding when I started my
+                        fitness journey, but I quickly found myself more invested in the sport as time went on. I now
+                        follow a few
+                        competitions and influencers regulary, and actively engage in the hobby myself.</p>
+                    <p>My Favorite Bodybuilders:</p>
+                    <ul>
+                        <li>Tom Platz</li>
+                        <li>Chris Bumstead</li>
+                        <li>Noel Deyzel</li>
+                        <li>Stephane Matala</li>
+                        <li>Sam Sulek</li>
+                    </ul>
+                </div>
             </div>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
             <div class="hero">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
-                </figure>
+                <div class="heroflex">
+                    <h2>Navigation Guide</h2>
+                    <blockquote>A short summary of each page. This site will provide general information on
+                        bodybuilding, including a history of the sport, the science behind it, and my own personal
+                        habits.</blockquote>
+                    <ul>
+                        <li><strong>About:</strong> A general summary of the sport, and a brief overview of the history.
+                        </li>
+                        <li><strong>Process:</strong> The science behind bodybuilding, that allows it to happen in the
+                            first place.</li>
+                        <li><strong>My-Routine:</strong> How I structure my personal bodybuilding training.</li>
+                        <li><strong>Resources:</strong> More resources on bodybuilding, because I don't know everything.
+                        </li>
+                        <li><strong>FAQ:</strong> A page to answer the frequently asked questions about bodybuilding and
+                            the site.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>about</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
+            <div class="hero">
+                <div class="heroflex">
+                    <h2>about</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.</p>
+                </div>
+            </div>
             <div class="hero">
                 <figure>
                     <img src="/images/placeholder.png" alt="placeholder">
@@ -378,10 +395,14 @@
         </section>
 
         <section id="schedule">
-            <h2>routine</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <div class="hero">
+                <div class="heroflex">
+                    <h2>routine</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</p>
+                </div>
+            </div>
             <div class="hero">
                 <figure>
                     <img src="/images/placeholder.png" alt="placeholder">
@@ -434,39 +455,54 @@
         </section>
 
         <section id="faq">
-            <h2>faq</h2>
+            <div class="hero">
+                <div class="heroflex">
+                    <h2>Frequently Asked Questions</h2>
+                    <blockquote>Definition: a list of questions and answers relating to a particular subject, especially
+                        one giving basic information for users of a website. <small style="font-size: .7rem;">From <a
+                                href="https://languages.oup.com/google-dictionary-en/" target="_blank"
+                                rel="noopener noreferrer">Oxford Languages</a></small></blockquote>
+                    <p>A page to answer the frequently asked questions about bodybuilding and the site.</p>
+                </div>
+            </div>
             <div class="hero">
                 <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
+                    <img src="images/bb2.jpeg" alt="A man admiring his musculature.">
+                    <figcaption>A man admiring his musculature.</figcaption>
                 </figure>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <div class="heroflex horizontal-img-align">
+                    <h2>Why Bodybuilding?</h2>
+                    <p>Although bodybuilding can be as simple as going to the gym, training as hard as you can, and
+                        following healthy habits, there are plenty of intricacies and habits that people can build in
+                        order to
+                        complicate or simplify the hobby as much as one sees fit. My love for the hobby stems from the
+                        great
+                        community surrounding bodybuilding, and the health benefits it provides.</p>
+                </div>
             </div>
             <div class="hero">
                 <div class="heroflex">
                     <h2>Where's the site icon from?</h2>
                     <p>The icon was initially going to be sourced from
-                        <a href="https://www.vecteezy.com/free-vector/barbell" target="_blank" rel="noopener noreferrer">Barbell Vectors
+                        <a href="https://www.vecteezy.com/free-vector/barbell" target="_blank"
+                            rel="noopener noreferrer">Barbell Vectors
                             by Vecteezy</a>, which was then
-                        put through <a href="https://favicon.io/" target="_blank" rel="noopener noreferrer">favicon.io</a> for use with
-                        this website. However, that became very complicated very quickly, so we just generated it from <a
-                            href="https://favicon.io/" target="_blank" rel="noopener noreferrer">favicon.io</a> using text instead.
+                        put through <a href="https://favicon.io/" target="_blank"
+                            rel="noopener noreferrer">favicon.io</a> for use with
+                        this website. However, that became very complicated very quickly, so we just generated it from
+                        <a href="https://favicon.io/" target="_blank" rel="noopener noreferrer">favicon.io</a> using
+                        text instead.
                     </p>
                     <p>The favicon was generated using the following font:
-                        <ul>
-                            <li>Font Title: Fira Code</li>
-                            <li>Font Author: Copyright 2014-2020 <a href="https://github.com/tonsky/FiraCode">The Fira Code Project Authors</a></li>
-                            <li><a href="http://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVfxN87gsj0.ttf">Font Source</a></li>
-                            <li>Font License: <a href="http://scripts.sil.org/OFL">SIL Open Font License, 1.1</a></li>
-                        </ul>
+                    <ul style="padding-bottom: 1rem;">
+                        <li>Font Title: Fira Code</li>
+                        <li>Font Author: Copyright 2014-2020 <a href="https://github.com/tonsky/FiraCode">The Fira Code
+                                Project Authors</a></li>
+                        <li><a
+                                href="http://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVfxN87gsj0.ttf">Font
+                                Source</a></li>
+                        <li>Font License: <a href="http://scripts.sil.org/OFL">SIL Open Font License, 1.1</a></li>
+                    </ul>
                     </p>
                 </div>
             </div>
