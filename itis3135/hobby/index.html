@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hobby Site</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Bodybuilding Hobby Site</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -17,7 +21,7 @@
             --head: #fff;
             --font: #f8f9fa;
             --fontalt: #e9ecef;
-            --link: #6610f2;
+            --link: #aa75ff;
         }
 
         * {
@@ -29,6 +33,14 @@
         body {
             background-color: var(--body);
             font-family: 'Inter', sans-serif;
+        }
+
+        header{
+            box-shadow: 2px 0px 5px black;
+        }
+
+        footer{
+            box-shadow: -2px 0px 5px black;
         }
 
         header,
@@ -56,6 +68,11 @@
 
         .icon {
             color: var(--font);
+        }
+
+        .heroflex{
+            display: flex; 
+            flex-direction: column;
         }
 
         header>nav {
@@ -86,24 +103,14 @@
             margin: 2rem 4rem;
         }
 
-        section>h2 {
-            color: var(--head);
-            margin-bottom: 1rem;
-        }
-
-        .hero>img {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-        }
-
         .hero {
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
             margin: 1rem;
             padding: 1rem;
             background-color: var(--alt);
             border: 1px solid var(--border);
+            box-shadow: 2px 2px 5px black;
         }
 
         p {
@@ -113,8 +120,21 @@
             padding-bottom: 1rem;
         }
 
+        ul{
+            padding-left: 3rem;
+            list-style-type: circle;
+            width: fit-content;
+            color: var(--font);
+            font-size: 1.5rem;
+        }
+
         p:last-of-type {
             padding-bottom: 0;
+        }
+
+        h2 {
+            color: var(--head);
+            margin-bottom: 1rem;
         }
 
         figcaption {
@@ -126,6 +146,17 @@
 
         section{
             flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        a{
+            color: var(--link);
         }
 
         #home {
@@ -216,24 +247,21 @@
 
 <body>
     <header>
-        <h1><button onclick="homeNav();">hobby</button></h1>
+        <h1><button onclick="homeNav();">Bodybuilding</button></h1>
         <nav id="navIndex" class="">
             <a href="javascript:void(0);" class="icon" onclick="displayNav()">
                 <i class="fa fa-bars"></i>
             </a>
             <button onclick="aboutNav();">about</button>
             <button onclick="processNav();">process</button>
-            <button onclick="scheduleNav();">schedule</button>
-            <button onclick="contactNav();">contact</button>
+            <button onclick="scheduleNav();">my-routine</button>
+            <button onclick="contactNav();">resources</button>
             <button onclick="faqNav();">faq</button>
         </nav>
     </header>
     <main>
         <section id="home">
             <h2>home</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
             <div class="hero">
                 <figure>
                     <img src="/images/placeholder.png" alt="placeholder">
@@ -350,7 +378,7 @@
         </section>
 
         <section id="schedule">
-            <h2>schedule</h2>
+            <h2>routine</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
@@ -387,7 +415,7 @@
         </section>
 
         <section id="contact">
-            <h2>contact</h2>
+            <h2>resources</h2>
             <div class="hero">
                 <figure>
                     <img src="/images/placeholder.png" alt="placeholder">
@@ -423,49 +451,24 @@
                     molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </div>
             <div class="hero">
-                <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
-                </figure>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            </div>
-            <div class="hero">
-                <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
-                </figure>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            </div>
-            <div class="hero">
-                <figure>
-                    <img src="/images/placeholder.png" alt="placeholder">
-                    <figcaption>placeholder</figcaption>
-                </figure>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <div class="heroflex">
+                    <h2>Where's the site icon from?</h2>
+                    <p>The icon was initially going to be sourced from
+                        <a href="https://www.vecteezy.com/free-vector/barbell" target="_blank" rel="noopener noreferrer">Barbell Vectors
+                            by Vecteezy</a>, which was then
+                        put through <a href="https://favicon.io/" target="_blank" rel="noopener noreferrer">favicon.io</a> for use with
+                        this website. However, that became very complicated very quickly, so we just generated it from <a
+                            href="https://favicon.io/" target="_blank" rel="noopener noreferrer">favicon.io</a> using text instead.
+                    </p>
+                    <p>The favicon was generated using the following font:
+                        <ul>
+                            <li>Font Title: Fira Code</li>
+                            <li>Font Author: Copyright 2014-2020 <a href="https://github.com/tonsky/FiraCode">The Fira Code Project Authors</a></li>
+                            <li><a href="http://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVfxN87gsj0.ttf">Font Source</a></li>
+                            <li>Font License: <a href="http://scripts.sil.org/OFL">SIL Open Font License, 1.1</a></li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </section>
     </main>
