@@ -175,6 +175,22 @@ form{
     padding: 8px 16px;
     width: 100px;
 }
+
+/*reviews*/
+.reviewpass{
+    color: #49f852d3;
+}
+
+.reviewfail{
+    color: #f85249d3;
+}
+.reviewimage{
+    width: 60%; 
+    border-radius: 1rem; 
+    border: 1px solid #30363d; 
+    margin-bottom: 1rem;
+}
+
 /*other main pages*/
 
 /*index root pages*/
@@ -372,7 +388,7 @@ a:active {
     .navlist{
         gap: 32px;
     }
-    .project-image-item{
+    .project-image-item,.reviewimage{
         width: 100%;
     }
     .text-format{
