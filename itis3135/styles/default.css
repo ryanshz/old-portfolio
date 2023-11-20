@@ -115,9 +115,13 @@ main{
 }
 
 i.fa{
-    padding: 6px;
+    padding: 8px;
+    color: #c9d1d9;
     border-radius: 8px;
     border: 1px solid #30363d;
+}
+i.fa:hover{
+    border: 1px solid #c9d1d9;
 }
 
 /*dividers*/
