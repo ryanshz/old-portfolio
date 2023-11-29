@@ -226,6 +226,23 @@ form{
     margin-bottom: 1rem;
 }
 
+/*slideshow*/
+#slideshow{
+
+}
+.slides{
+
+}
+#slideshow-row{
+
+}
+.slide-icons{
+
+}
+.slides,.slide-icons{
+    width: 100%;
+}
+
 /*other main pages*/
 
 /*index root pages*/
