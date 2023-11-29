@@ -123,6 +123,11 @@ i.fa{
 i.fa:hover{
     border: 1px solid #c9d1d9;
 }
+.social-links{
+    width: 20px;
+    height: auto;
+    text-align: center;
+}
 
 /*dividers*/
 hr{
